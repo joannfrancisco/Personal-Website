@@ -1,0 +1,305 @@
+body {
+    background-color: #F8F5E9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #0D4715;
+    font-family: "Sacramento", cursive;
+    font-size: 6rem;
+    margin: 10px;
+}
+
+h2 {
+    color: #3A7D44;
+    font-family: "Port Lligat Sans", sans-serif;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #9DC08B;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.h2-hero {
+    color: #F8F5E9;
+}
+
+p {
+    color: #00000099;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2;
+    max-width: 100%;
+}
+
+#hero {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(./images/girl-7889973_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img-contact {
+    width: auto; 
+    height: 100px;
+}
+
+.skill-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px 20px 20px;
+    max-width: 500px;
+    margin: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.skill-img {
+    width: 480px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.prof-pic {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 70px 30px 30px 60px;
+}
+
+footer {
+    background-color: #DF6D14;
+    margin: 0; 
+    padding: 30px;
+    color: #F8F5E9;
+}
+
+hr {
+    border: dotted #9DC08B 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto 80px auto;
+}
+
+.project {
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: white;
+    font-family: "Port Lligat Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+
+.text-hover {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.text-hover:hover {
+    color: rgb(246, 197, 23);
+}
+  
+.btn-resume {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #3A7D44, #9DC08B);
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    margin-top: 60PX;
+}
+
+.btn-resume::before {
+    content: "VIEW RESUME";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 12px ;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #9DC08B, #3A7D44);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(45deg, #3A7D44, #9DC08B);
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    margin-top: 50px;
+}
+
+.btn::before {
+    content: "CONTACT ME";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 12px ;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #9DC08B, #3A7D44);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.btn:hover::before , .btn-resume:hover::before {
+    opacity: 1;
+}
+
+.btn:hover , .btn-resume:hover {
+    transform: scale(1.05);
+}
+
+.mb {
+    margin-bottom: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+#contact > .container > h3 {
+    text-align: center;
+}
+
+#contact > .container > p {
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+#about > .container > p {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 480px) {     /* mobile - portrait */
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .skills {
+       flex-direction: column;
+       margin: 0px;
+    }
+
+    .skill-flex {
+        padding: 0px;      
+    }
+
+    .skill-img {
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    hr {
+        margin: 50px auto 40px auto;
+    }
+
+    #hero {
+      min-height: 100vh;
+    } 
+
+    #contact > .container > p {
+        max-width: 480px;
+    }
+    
+    #about > .container > p {
+        max-width: 480px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+
+
+
+
+/*
+
+@media (max-width: 480px) {      mobile - portrait 
+    body {
+        background-color: lightsalmon;
+    }
+} 
+
+@media (min-width: 481px) and (max-width: 932px) {     mobile - landscape
+    body {
+      background-color: yellow;
+    }
+}
+
+
+@media (min-width: 933px) and (max-width: 1024px) {     tablet
+    body {
+      background-color: powderblue;
+    }
+}
+
+@media (min-width: 1025px) {     desktop
+    body {
+      background-color: limegreen;
+    }
+}
+*/
+  
+
+    
